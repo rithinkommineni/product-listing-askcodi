@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Bookstore</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #4CAF50;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            text-decoration: none;
+            margin: 0 10px;
+            color: white;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .book {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mr. Bookstore</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Books</a>
+            <a href="#">Cart</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="book">
+        <h2>Book Title 1</h2>
+        <img src="book1.jpg" alt="Book 1">
+        <p>Price: $10</p>
+        <p>Summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Reviews:
+            <ol>
+                <li>Great book, highly recommended!</li>
+                <li>Interesting read, couldn't put it down.</li>
+            </ol>
+        </p>
+        <button onclick="addToCart('Book Title 1', 10)">Add to Cart</button>
+    </div>
+
+    <div class="book">
+        <h2>Book Title 2</h2>
+        <img src="book2.jpg" alt="Book 2">
+        <p>Price: $15</p>
+        <p>Summary: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Reviews:
+            <ol>
+                <li>Fascinating book, a must-read!</li>
+                <li>Couldn't get enough of it, amazing story.</li>
+            </ol>
+        </p>
+        <button onclick="addToCart('Book Title 2', 15)">Add to Cart</button>
+    </div>
+
+    <footer>
+        <p>Mr. Bookstore, 123 Main Street, City, Country | Email: info@mrbookstore.com | Phone: 123-456-7890</p>
+    </footer>
+
+    <script>
+        function addToCart(bookTitle, price) {
+            // Add logic to add the book to the cart
+            alert(bookTitle + " added to cart. Total: $" + price);
+        }
+    </script>
+</body>
+</html>
